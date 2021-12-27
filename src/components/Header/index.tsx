@@ -1,15 +1,10 @@
 import { Flex } from "@chakra-ui/react";
+
 import Logo from "./Logo";
 
 export default function Header() {
   return (
-    <Flex
-      as="header"
-      w="100%"
-      h="100px"
-      justify="center"
-      position="relative"
-    >
+    <Flex as="header" w="100%" h="100px" justify="center" position="relative">
       <Flex
         w="100%"
         maxW="200px"
@@ -21,5 +16,5 @@ export default function Header() {
         <Logo />
       </Flex>
     </Flex>
-  )
+  );
 }

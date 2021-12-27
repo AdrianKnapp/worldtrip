@@ -1,5 +1,5 @@
-import { Flex } from '@chakra-ui/react';
-import Image from 'next/image';
+import { Flex } from "@chakra-ui/react";
+import Image from "next/image";
 
 export default function Logo() {
   return (
@@ -10,15 +10,9 @@ export default function Logo() {
       justify="center"
       align="center"
       position="relative"
+      priority={1}
     >
-      <Image
-        src="/logo.svg"
-        alt="Logo"
-        width={185}
-        height={46}
-        layout="fill"
-      />
+      <Image src="/logo.svg" alt="Logo" layout="fill" priority />
     </Flex>
-
-  )
+  );
 }
